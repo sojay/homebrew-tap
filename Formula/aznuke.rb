@@ -1,4 +1,6 @@
 class Aznuke < Formula
+  include Language::Python::Virtualenv
+
   desc "A powerful CLI tool for scanning and cleaning up Azure resources"
   homepage "https://github.com/sojay/azure-nuke"
   url "https://github.com/sojay/azure-nuke/archive/v0.1.4.tar.gz"
