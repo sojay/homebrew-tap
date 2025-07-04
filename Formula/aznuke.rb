@@ -10,9 +10,7 @@ class Aznuke < Formula
   depends_on "python@3.11"
 
   def install
-    venv = virtualenv_create(libexec, "python3.11")
-    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
-    bin.install_symlink libexec/"bin/aznuke"
+    virtualenv_install_with_resources
   end
 
   test do
